@@ -1,4 +1,4 @@
-# run_analysis.R
+# run_analysis.R 
 
 #0. prepare LIBs
 library(reshape2)
@@ -52,7 +52,7 @@ selectedCols <- grep("-(mean|std).*", as.character(feature[,2]))
 selectedColNames <- feature[selectedCols, 2]
 selectedColNames <- gsub("-mean", "Mean", selectedColNames)
 selectedColNames <- gsub("-std", "Std", selectedColNames)
-selectedColNames <- gsub("[-()]", "", selectedColNames)
+selectedColNames <- gsub("[-()]", "", selectedColNames)  
 
 
 #4. extract data by cols & using descriptive name
